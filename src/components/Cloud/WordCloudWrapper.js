@@ -31,11 +31,14 @@ const convertToWordCloudFormat = (words) => {
 };
 
 const WordCloudWrapper = ({ words }) => (
-  <ReactWordcloud words={convertToWordCloudFormat(words)} options={options} />
+  <ReactWordcloud
+    words={convertToWordCloudFormat(words)}
+    options={options}
+  />
 );
-
-export default WordCloudWrapper;
 
 WordCloudWrapper.propTypes = {
   words: objectOf(number).isRequired,
 };
+
+export default WordCloudWrapper;
