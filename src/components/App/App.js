@@ -12,7 +12,7 @@ const App = () => (
         Treebank Wordcloud
       </PerseidsHeader>
       <main role="main">
-        <div className="container">
+        <div className="container text-center">
           <Switch>
             <Route exact path="/" component={Home} />
             <Route path="/:url/:index?" component={Cloud} />
