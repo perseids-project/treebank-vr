@@ -219,6 +219,8 @@ const stopwords = {
   ut: true,
   // Custom
   punc: true,
+  '-que': true,
+  jam: true,
 };
 
 const isStopword = (word) => (

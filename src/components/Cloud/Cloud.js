@@ -115,7 +115,7 @@ class Cloud extends Component {
   }
 
   index() {
-    const { match: { params: { index } } } = this.props;
+    const { match: { params: { index = '0' } } } = this.props;
 
     return parseInt(index, 10);
   }
@@ -142,7 +142,7 @@ class Cloud extends Component {
     return (
       <div className="row">
         <div className="col-4 col-md-2 offset-md-2">
-          {(index > 0) && <Link type="button" to={`/${url}/${index - 1}`} className="btn btn-block btn-secondary">«</Link>}
+          {(index > 0) && <Link to={`/${url}/${index - 1}`} className="btn btn-block btn-secondary">«</Link>}
         </div>
         <div className="col-4">
           <div className="dropdown">
@@ -156,7 +156,7 @@ class Cloud extends Component {
           </div>
         </div>
         <div className="col-4 col-md-2">
-          {(index < subDocs.length - 1) && <Link type="button" to={`/${url}/${index + 1}`} className="btn btn-block btn-secondary">»</Link>}
+          {(index < subDocs.length - 1) && <Link to={`/${url}/${index + 1}`} className="btn btn-block btn-secondary">»</Link>}
         </div>
       </div>
     );

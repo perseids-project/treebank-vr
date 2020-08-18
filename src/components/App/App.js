@@ -1,6 +1,8 @@
 import React from 'react';
 import { PerseidsHeader, PerseidsFooter } from 'perseids-react-components';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import {
+  BrowserRouter as Router, Route, Switch, NavLink,
+} from 'react-router-dom';
 
 import Home from '../Home';
 import Cloud from '../Cloud';
@@ -10,6 +12,14 @@ const App = () => (
     <>
       <PerseidsHeader>
         Treebank Wordcloud
+
+        <ul className="navbar-nav ml-auto">
+          <li className="nav-item">
+            <NavLink className="nav-link" exact to="/">
+              Home
+            </NavLink>
+          </li>
+        </ul>
       </PerseidsHeader>
       <main role="main">
         <div className="container text-center">
