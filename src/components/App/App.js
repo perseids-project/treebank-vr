@@ -1,16 +1,16 @@
 import React from 'react';
 import { PerseidsHeader, PerseidsFooter } from 'perseids-react-components';
 import {
-  Route, Switch, NavLink,
+  BrowserRouter as Router, Route, Switch, NavLink,
 } from 'react-router-dom';
 
 import Home from '../Home';
 import Cloud from '../Cloud';
 
 const App = () => (
-  <>
+  <Router basename={process.env.PUBLIC_URL}>
     <PerseidsHeader>
-      Treebank Wordcloud
+      Treebank Word Cloud
 
       <ul className="navbar-nav ml-auto">
         <li className="nav-item">
@@ -32,7 +32,7 @@ const App = () => (
       github="https://github.com/perseids-project/treebank-wordcloud"
       report="https://github.com/perseids-project/treebank-wordcloud/issues"
     />
-  </>
+  </Router>
 );
 
 export default App;

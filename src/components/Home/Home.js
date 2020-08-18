@@ -30,7 +30,7 @@ class Home extends Component {
           <div className="row pt-4">
             <div className="col">
               <h3>
-                Wordcloud from Treebank
+                Word Cloud from Treebank
               </h3>
               <h6>
                 Enter the URL for a treebank XML document:
@@ -49,7 +49,7 @@ class Home extends Component {
             </div>
 
             <Link className="btn btn-block btn-primary" to={`/${escapedUrl}`}>
-              Create wordcloud
+              Create word cloud
             </Link>
           </div>
         </div>

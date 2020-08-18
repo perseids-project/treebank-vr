@@ -62,7 +62,7 @@ const extractSubDocs = (text) => {
       // Some words have a number following them: e.g. sum1
       // In certain cases this is because there are multiple words with the
       // same dictionary form. But dealing with this edge case creates more
-      // complications than it's worth: wordclouds are meant to give a broad
+      // complications than it's worth: word clouds are meant to give a broad
       // overview of the vocabulary of a passage.
       addWord(currentSubdoc, match.match(/lemma=["'](.*?)\d*["']/)[1]);
     }

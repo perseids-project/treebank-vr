@@ -3,12 +3,12 @@ import ReactDOM from 'react-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'perseids-react-components/build/css/index.css';
 import './index.css';
-import Router from './components/Router';
+import App from './components/App';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Router />
+    <App />
   </React.StrictMode>,
   document.getElementById('root')
 );
