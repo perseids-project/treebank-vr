@@ -15,7 +15,7 @@ const App = () => (
         <div className="container">
           <Switch>
             <Route exact path="/" component={Home} />
-            <Route path="/:url" component={Cloud} />
+            <Route path="/:url/:index?" component={Cloud} />
           </Switch>
         </div>
       </main>
