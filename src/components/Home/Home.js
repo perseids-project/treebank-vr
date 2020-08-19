@@ -22,7 +22,7 @@ class Home extends Component {
 
   render() {
     const { url } = this.state;
-    const escapedUrl = encodeURIComponent(url);
+    const escapedUrl = Buffer.from(url).toString('base64');
 
     return (
       <>
@@ -51,6 +51,32 @@ class Home extends Component {
             <Link className="btn btn-block btn-primary" to={`/${escapedUrl}`}>
               Create word cloud
             </Link>
+          </div>
+        </div>
+        <hr />
+        <div className="row pt-2">
+          <div className="col">
+            <h4>
+              Examples
+            </h4>
+          </div>
+        </div>
+        <div className="row pt-2">
+          <div className="col-md-6">
+            <dt>
+              Herodotus
+              <em>
+                The Histories
+              </em>
+            </dt>
+            <dd>
+              <a href="/">
+                1.1-1.19
+              </a>
+            </dd>
+          </div>
+          <div className="col-md-6">
+            <ul />
           </div>
         </div>
       </>

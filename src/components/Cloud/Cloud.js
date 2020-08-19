@@ -111,7 +111,7 @@ class Cloud extends Component {
   url() {
     const { match: { params: { url } } } = this.props;
 
-    return decodeURIComponent(url);
+    return Buffer.from(url, 'base64').toString();
   }
 
   index() {
