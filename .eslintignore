@@ -1,5 +1,5 @@
 src/index.js
 src/serviceWorker.js
-src/setupTests.js
 build/
 public/
+test/backstop_data

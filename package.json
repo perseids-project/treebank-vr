@@ -4,9 +4,6 @@
   "private": true,
   "homepage": "https://perseids-project.github.io/treebank-wordcloud/",
   "dependencies": {
-    "@testing-library/jest-dom": "^5.11.3",
-    "@testing-library/react": "^10.4.8",
-    "@testing-library/user-event": "^12.1.1",
     "bootstrap": "^4.5.2",
     "cross-fetch": "^3.0.5",
     "eslint-config-airbnb": "^18.2.0",
@@ -18,7 +15,6 @@
     "react-dom": "^16.13.1",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.3",
-    "react-test-renderer": "^16.13.1",
     "react-wordcloud": "^1.2.7",
     "typeface-arimo": "^0.0.72",
     "typeface-tinos": "^0.0.72"
@@ -32,7 +28,8 @@
     "cleanup": "rm -rf node_modules/gh-pages/.cache",
     "start": "react-scripts start",
     "build": "react-scripts build && cp build/index.html build/404.html",
-    "test": "react-scripts test",
+    "test": "bash test/test.sh",
+    "approve-changes": "bash test/approve-changes.sh",
     "lint": "eslint --ext=js --ext=jsx .",
     "eject": "react-scripts eject"
   },
