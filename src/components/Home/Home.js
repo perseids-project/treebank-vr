@@ -1,12 +1,17 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
+import clickTreebank from './click-treebank.png';
+import copyLink from './copy-link.png';
+import pasteLink from './paste-link.png';
+import createWordcloud from './create-wordcloud.png';
+
 class Home extends Component {
   constructor(props) {
     super(props);
 
     this.state = {
-      url: 'https://perseids-publications.github.io/harrington-trees/xml/CITE_TREEBANK_XML/perseus/lattb/4362/lattb.4362.1.tb.xml',
+      url: '',
     };
 
     this.handleChange = this.handleChange.bind(this);
@@ -62,21 +67,134 @@ class Home extends Component {
           </div>
         </div>
         <div className="row pt-2">
-          <div className="col-md-6">
-            <dt>
-              Herodotus
+          <div className="col-sm-6">
+            <dt className="pb-1">
+              Herodotus,
+              {' '}
               <em>
                 The Histories
               </em>
             </dt>
             <dd>
-              <a href="/">
+              <a href="/aHR0cHM6Ly9wZXJzZWlkcy1wdWJsaWNhdGlvbnMuZ2l0aHViLmlvL2dvcm1hbi10cmVlcy94bWwvaGR0LTEtMS0xOS1idTMueG1s">
                 1.1-1.19
               </a>
             </dd>
+            <dd>
+              <a href="/aHR0cHM6Ly9wZXJzZWlkcy1wdWJsaWNhdGlvbnMuZ2l0aHViLmlvL2dvcm1hbi10cmVlcy94bWwvaGR0LTEtMjAtMzktYnUyLnhtbA==">
+                1.20-1.39
+              </a>
+            </dd>
+            <dd>
+              <a href="/aHR0cHM6Ly9wZXJzZWlkcy1wdWJsaWNhdGlvbnMuZ2l0aHViLmlvL2dvcm1hbi10cmVlcy94bWwvaGR0LTEtNDAtNTktYnUyLnhtbA==">
+                1.40-1.59
+              </a>
+            </dd>
+            <dt className="pt-1 pb-1">
+              Sophocles,
+              {' '}
+              <em>
+                Antigone
+              </em>
+            </dt>
+            <dd>
+              <a href="/aHR0cHM6Ly9wZXJzZWlkcy1wdWJsaWNhdGlvbnMuZ2l0aHViLmlvL2RhcGhuZS10cmVlcy94bWwvdGxnMDAxMS90bGcwMDIvdGxnMDAxMS50bGcwMDIuZGFwaG5lX3RiLWdyYzEueG1s">
+                1-1353
+              </a>
+            </dd>
+            <dt className="pt-1 pb-1">
+              Lucian,
+              {' '}
+              <em>
+                A True Story
+              </em>
+            </dt>
+            <dd>
+              <a href="/aHR0cHM6Ly9wZXJzZWlkcy1wdWJsaWNhdGlvbnMuZ2l0aHViLmlvL2hhcnJpbmd0b24tdHJlZXMveG1sL0NJVEVfVFJFRUJBTktfWE1ML3BlcnNldXMvZ3JjdGIvNTI3OS9ncmN0Yi41Mjc5LjEudGIueG1s">
+                1-4
+              </a>
+            </dd>
+            <dd>
+              <a href="/aHR0cHM6Ly9wZXJzZWlkcy1wdWJsaWNhdGlvbnMuZ2l0aHViLmlvL2hhcnJpbmd0b24tdHJlZXMveG1sL0NJVEVfVFJFRUJBTktfWE1ML3BlcnNldXMvZ3JjdGIvNTI4MC9ncmN0Yi41MjgwLjEudGIueG1s">
+                5-47
+              </a>
+            </dd>
           </div>
-          <div className="col-md-6">
-            <ul />
+          <div className="col-sm-6">
+            <dt className="pb-1">
+              C. Iulius Caesar,
+              {' '}
+              <em>
+                Gallic War
+              </em>
+            </dt>
+            <dd>
+              <a href="/aHR0cHM6Ly9wZXJzZWlkcy1wdWJsaWNhdGlvbnMuZ2l0aHViLmlvL2hhcnJpbmd0b24tdHJlZXMveG1sL0NJVEVfVFJFRUJBTktfWE1ML3BlcnNldXMvbGF0dGIvNzIyOS9sYXR0Yi43MjI5LjEudGIueG1s">
+                1.1-1.10
+              </a>
+            </dd>
+            <dd>
+              <a href="/aHR0cHM6Ly9wZXJzZWlkcy1wdWJsaWNhdGlvbnMuZ2l0aHViLmlvL2hhcnJpbmd0b24tdHJlZXMveG1sL0NJVEVfVFJFRUJBTktfWE1ML3BlcnNldXMvbGF0dGIvNDM2Mi9sYXR0Yi40MzYyLjEudGIueG1s">
+                4.24-4.36
+              </a>
+            </dd>
+            <dd>
+              <a href="/aHR0cHM6Ly9wZXJzZWlkcy1wdWJsaWNhdGlvbnMuZ2l0aHViLmlvL2hhcnJpbmd0b24tdHJlZXMveG1sL0NJVEVfVFJFRUJBTktfWE1ML3BlcnNldXMvbGF0dGIvNDM1MC9sYXR0Yi40MzUwLjEudGIueG1s">
+                5.24-5.48
+              </a>
+            </dd>
+            <dd>
+              <a href="/aHR0cHM6Ly9wZXJzZWlkcy1wdWJsaWNhdGlvbnMuZ2l0aHViLmlvL2hhcnJpbmd0b24tdHJlZXMveG1sL0NJVEVfVFJFRUJBTktfWE1ML3BlcnNldXMvbWlzY3RiLzMyNi9taXNjdGIuMzI2LjEudGIueG1s">
+                6.13-6.20
+              </a>
+            </dd>
+            <dt className="pt-1 pb-1">
+              M. Tullius Cicero,
+              {' '}
+              <em>
+                First Catilinarian
+              </em>
+            </dt>
+            <dd>
+              <a href="/aHR0cHM6Ly9wZXJzZWlkcy1wdWJsaWNhdGlvbnMuZ2l0aHViLmlvL2hhcnJpbmd0b24tdHJlZXMveG1sL0NJVEVfVFJFRUJBTktfWE1ML3BlcnNldXMvbGF0dGIvNjM2MS9sYXR0Yi42MzYxLjEudGIueG1s">
+                1.1-1.10
+              </a>
+            </dd>
+          </div>
+        </div>
+        <hr />
+        <div className="row pt-2">
+          <div className="col">
+            <h4>
+              Creating a word cloud from a treebank
+            </h4>
+          </div>
+        </div>
+        <div className="row pt-2">
+          <div className="col-md-3">
+            <img src={clickTreebank} className="img-fluid border" alt="treebank template page" />
+            <p className="text-left pt-2">
+              1. Visit a treebank template page and click on a treebank.
+            </p>
+          </div>
+          <div className="col-md-3">
+            <img src={copyLink} className="img-fluid border" alt="treebank template page" />
+            <p className="text-left pt-2">
+              2. Scroll to the bottom of the page, right click on the &quot;View XML&quot; link,
+              and copy the link location.
+            </p>
+          </div>
+          <div className="col-md-3">
+            <img src={pasteLink} className="img-fluid border" alt="treebank template page" />
+            <p className="text-left pt-2">
+              3. Paste the link in the &quot;URL&quot; text input.
+            </p>
+          </div>
+          <div className="col-md-3">
+            <img src={createWordcloud} className="img-fluid border" alt="treebank template page" />
+            <p className="text-left pt-2">
+              4. Click the &quot;Create word cloud&quot; button.
+            </p>
           </div>
         </div>
       </>

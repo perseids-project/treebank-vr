@@ -8,7 +8,14 @@ import WordCloudWrapper from './WordCloudWrapper';
 
 const addSubdoc = (subDoc, subDocs) => {
   if (Object.keys(subDoc.words).length !== 0) {
-    subDocs.push(subDoc);
+    if (subDoc.name === '') {
+      subDocs.push({
+        name: '-',
+        words: subDoc.words,
+      });
+    } else {
+      subDocs.push(subDoc);
+    }
   }
 
   return subDocs;

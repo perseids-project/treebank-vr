@@ -221,6 +221,12 @@ const stopwords = {
   punc: true,
   '-que': true,
   jam: true,
+  ';': true,
+  ',': true,
+  '.': true,
+  '·': true,
+  ':': true,
+  '̓': true,
 };
 
 const isStopword = (word) => (
