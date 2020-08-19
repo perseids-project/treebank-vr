@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, Redirect } from 'react-router-dom';
 
 import clickTreebank from './click-treebank.png';
 import copyLink from './copy-link.png';
@@ -12,22 +12,38 @@ class Home extends Component {
 
     this.state = {
       url: '',
+      redirect: false,
     };
 
     this.handleChange = this.handleChange.bind(this);
+    this.handleKeyDown = this.handleKeyDown.bind(this);
   }
 
-  handleChange(event) {
-    const { value } = event.target;
-
+  handleChange({ target: { value } }) {
     this.setState({
       url: value,
     });
   }
 
-  render() {
+  handleKeyDown({ key }) {
     const { url } = this.state;
+
+    if (key === 'Enter' && url !== '') {
+      this.setState({
+        redirect: true,
+      });
+    }
+  }
+
+  render() {
+    const { url, redirect } = this.state;
     const escapedUrl = Buffer.from(url).toString('base64');
+
+    if (redirect) {
+      return (
+        <Redirect to={escapedUrl} />
+      );
+    }
 
     return (
       <>
@@ -50,7 +66,7 @@ class Home extends Component {
               <div className="input-group-prepend">
                 <span className="input-group-text" id="url-input-group">URL:</span>
               </div>
-              <input className="form-control" type="text" value={url} onChange={this.handleChange} placeholder="Enter URL ..." aria-label="URL" aria-describedby="url-input-group" />
+              <input className="form-control" type="text" value={url} onChange={this.handleChange} onKeyDown={this.handleKeyDown} placeholder="Enter URL ..." aria-label="URL" aria-describedby="url-input-group" />
             </div>
 
             <Link className="btn btn-block btn-primary" to={`/${escapedUrl}`}>
