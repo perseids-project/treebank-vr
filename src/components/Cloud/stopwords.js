@@ -220,6 +220,7 @@ const stopwords = {
   // Custom
   punc: true,
   '-que': true,
+  que: true,
   jam: true,
   ';': true,
   ',': true,
