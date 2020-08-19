@@ -31,6 +31,7 @@ const App = () => (
     <PerseidsFooter
       github="https://github.com/perseids-project/treebank-wordcloud"
       report="https://github.com/perseids-project/treebank-wordcloud/issues"
+      doi="10.5281/zenodo.3991082"
     />
   </Router>
 );
