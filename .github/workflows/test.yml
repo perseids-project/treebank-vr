@@ -25,10 +25,10 @@ jobs:
       # - name: Audit dependencies
       #   - run: yarn audit
 
-      - name: Run tests
-        run: yarn test --coverage
-        env:
-          CI: true
+      # - name: Run tests
+      #   run: yarn test --coverage
+      #   env:
+      #     CI: true
 
       - name: Build
         run: yarn build

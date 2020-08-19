@@ -18,10 +18,10 @@ jobs:
       - name: Install dependencies
         run: yarn install
 
-      - name: Run tests
-        run: yarn test --coverage
-        env:
-          CI: true
+      # - name: Run tests
+      #   run: yarn test --coverage
+      #   env:
+      #     CI: true
 
       - name: Build GitHub
         run: yarn build
