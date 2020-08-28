@@ -216,14 +216,14 @@ class Cloud extends Component {
         <header>
           <div className="row pt-4">
             <div className="col">
-              <h3>
+              <h1 className="h3">
                 Wordcloud from Treebank
-              </h3>
-              <h6>
+              </h1>
+              <h2 className="h6">
                 <a href={url} target="_blank" rel="noopener noreferrer">
                   {url}
                 </a>
-              </h6>
+              </h2>
             </div>
           </div>
         </header>

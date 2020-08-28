@@ -50,12 +50,12 @@ class Home extends Component {
         <header>
           <div className="row pt-4">
             <div className="col">
-              <h3>
+              <h1 className="h3">
                 Word Cloud from Treebank
-              </h3>
-              <h6>
+              </h1>
+              <h2 className="h6">
                 Enter the URL for a treebank XML document:
-              </h6>
+              </h2>
             </div>
           </div>
         </header>
@@ -77,113 +77,117 @@ class Home extends Component {
         <hr />
         <div className="row pt-2">
           <div className="col">
-            <h4>
+            <h3 className="h4">
               Examples
-            </h4>
+            </h3>
           </div>
         </div>
         <div className="row pt-2">
           <div className="col-sm-6">
-            <dt className="pb-1">
-              Herodotus,
-              {' '}
-              <em>
-                The Histories
-              </em>
-            </dt>
-            <dd>
-              <Link to="/aHR0cHM6Ly9wZXJzZWlkcy1wdWJsaWNhdGlvbnMuZ2l0aHViLmlvL2dvcm1hbi10cmVlcy94bWwvaGR0LTEtMS0xOS1idTMueG1s">
-                1.1-1.19
-              </Link>
-            </dd>
-            <dd>
-              <Link to="/aHR0cHM6Ly9wZXJzZWlkcy1wdWJsaWNhdGlvbnMuZ2l0aHViLmlvL2dvcm1hbi10cmVlcy94bWwvaGR0LTEtMjAtMzktYnUyLnhtbA==">
-                1.20-1.39
-              </Link>
-            </dd>
-            <dd>
-              <Link to="/aHR0cHM6Ly9wZXJzZWlkcy1wdWJsaWNhdGlvbnMuZ2l0aHViLmlvL2dvcm1hbi10cmVlcy94bWwvaGR0LTEtNDAtNTktYnUyLnhtbA==">
-                1.40-1.59
-              </Link>
-            </dd>
-            <dt className="pt-1 pb-1">
-              Sophocles,
-              {' '}
-              <em>
-                Antigone
-              </em>
-            </dt>
-            <dd>
-              <Link to="/aHR0cHM6Ly9wZXJzZWlkcy1wdWJsaWNhdGlvbnMuZ2l0aHViLmlvL2RhcGhuZS10cmVlcy94bWwvdGxnMDAxMS90bGcwMDIvdGxnMDAxMS50bGcwMDIuZGFwaG5lX3RiLWdyYzEueG1s">
-                1-1353
-              </Link>
-            </dd>
-            <dt className="pt-1 pb-1">
-              Lucian,
-              {' '}
-              <em>
-                A True Story
-              </em>
-            </dt>
-            <dd>
-              <Link to="/aHR0cHM6Ly9wZXJzZWlkcy1wdWJsaWNhdGlvbnMuZ2l0aHViLmlvL2hhcnJpbmd0b24tdHJlZXMveG1sL0NJVEVfVFJFRUJBTktfWE1ML3BlcnNldXMvZ3JjdGIvNTI3OS9ncmN0Yi41Mjc5LjEudGIueG1s">
-                1-4
-              </Link>
-            </dd>
-            <dd>
-              <Link to="/aHR0cHM6Ly9wZXJzZWlkcy1wdWJsaWNhdGlvbnMuZ2l0aHViLmlvL2hhcnJpbmd0b24tdHJlZXMveG1sL0NJVEVfVFJFRUJBTktfWE1ML3BlcnNldXMvZ3JjdGIvNTI4MC9ncmN0Yi41MjgwLjEudGIueG1s">
-                5-47
-              </Link>
-            </dd>
+            <dl>
+              <dt className="pb-1">
+                Herodotus,
+                {' '}
+                <em>
+                  The Histories
+                </em>
+              </dt>
+              <dd>
+                <Link to="/aHR0cHM6Ly9wZXJzZWlkcy1wdWJsaWNhdGlvbnMuZ2l0aHViLmlvL2dvcm1hbi10cmVlcy94bWwvaGR0LTEtMS0xOS1idTMueG1s">
+                  1.1-1.19
+                </Link>
+              </dd>
+              <dd>
+                <Link to="/aHR0cHM6Ly9wZXJzZWlkcy1wdWJsaWNhdGlvbnMuZ2l0aHViLmlvL2dvcm1hbi10cmVlcy94bWwvaGR0LTEtMjAtMzktYnUyLnhtbA==">
+                  1.20-1.39
+                </Link>
+              </dd>
+              <dd>
+                <Link to="/aHR0cHM6Ly9wZXJzZWlkcy1wdWJsaWNhdGlvbnMuZ2l0aHViLmlvL2dvcm1hbi10cmVlcy94bWwvaGR0LTEtNDAtNTktYnUyLnhtbA==">
+                  1.40-1.59
+                </Link>
+              </dd>
+              <dt className="pt-1 pb-1">
+                Sophocles,
+                {' '}
+                <em>
+                  Antigone
+                </em>
+              </dt>
+              <dd>
+                <Link to="/aHR0cHM6Ly9wZXJzZWlkcy1wdWJsaWNhdGlvbnMuZ2l0aHViLmlvL2RhcGhuZS10cmVlcy94bWwvdGxnMDAxMS90bGcwMDIvdGxnMDAxMS50bGcwMDIuZGFwaG5lX3RiLWdyYzEueG1s">
+                  1-1353
+                </Link>
+              </dd>
+              <dt className="pt-1 pb-1">
+                Lucian,
+                {' '}
+                <em>
+                  A True Story
+                </em>
+              </dt>
+              <dd>
+                <Link to="/aHR0cHM6Ly9wZXJzZWlkcy1wdWJsaWNhdGlvbnMuZ2l0aHViLmlvL2hhcnJpbmd0b24tdHJlZXMveG1sL0NJVEVfVFJFRUJBTktfWE1ML3BlcnNldXMvZ3JjdGIvNTI3OS9ncmN0Yi41Mjc5LjEudGIueG1s">
+                  1-4
+                </Link>
+              </dd>
+              <dd>
+                <Link to="/aHR0cHM6Ly9wZXJzZWlkcy1wdWJsaWNhdGlvbnMuZ2l0aHViLmlvL2hhcnJpbmd0b24tdHJlZXMveG1sL0NJVEVfVFJFRUJBTktfWE1ML3BlcnNldXMvZ3JjdGIvNTI4MC9ncmN0Yi41MjgwLjEudGIueG1s">
+                  5-47
+                </Link>
+              </dd>
+            </dl>
           </div>
           <div className="col-sm-6">
-            <dt className="pb-1">
-              C. Iulius Caesar,
-              {' '}
-              <em>
-                Gallic War
-              </em>
-            </dt>
-            <dd>
-              <Link to="/aHR0cHM6Ly9wZXJzZWlkcy1wdWJsaWNhdGlvbnMuZ2l0aHViLmlvL2hhcnJpbmd0b24tdHJlZXMveG1sL0NJVEVfVFJFRUJBTktfWE1ML3BlcnNldXMvbGF0dGIvNzIyOS9sYXR0Yi43MjI5LjEudGIueG1s">
-                1.1-1.10
-              </Link>
-            </dd>
-            <dd>
-              <Link to="/aHR0cHM6Ly9wZXJzZWlkcy1wdWJsaWNhdGlvbnMuZ2l0aHViLmlvL2hhcnJpbmd0b24tdHJlZXMveG1sL0NJVEVfVFJFRUJBTktfWE1ML3BlcnNldXMvbGF0dGIvNDM2Mi9sYXR0Yi40MzYyLjEudGIueG1s">
-                4.24-4.36
-              </Link>
-            </dd>
-            <dd>
-              <Link to="/aHR0cHM6Ly9wZXJzZWlkcy1wdWJsaWNhdGlvbnMuZ2l0aHViLmlvL2hhcnJpbmd0b24tdHJlZXMveG1sL0NJVEVfVFJFRUJBTktfWE1ML3BlcnNldXMvbGF0dGIvNDM1MC9sYXR0Yi40MzUwLjEudGIueG1s">
-                5.24-5.48
-              </Link>
-            </dd>
-            <dd>
-              <Link to="/aHR0cHM6Ly9wZXJzZWlkcy1wdWJsaWNhdGlvbnMuZ2l0aHViLmlvL2hhcnJpbmd0b24tdHJlZXMveG1sL0NJVEVfVFJFRUJBTktfWE1ML3BlcnNldXMvbWlzY3RiLzMyNi9taXNjdGIuMzI2LjEudGIueG1s">
-                6.13-6.20
-              </Link>
-            </dd>
-            <dt className="pt-1 pb-1">
-              M. Tullius Cicero,
-              {' '}
-              <em>
-                First Catilinarian
-              </em>
-            </dt>
-            <dd>
-              <Link to="/aHR0cHM6Ly9wZXJzZWlkcy1wdWJsaWNhdGlvbnMuZ2l0aHViLmlvL2hhcnJpbmd0b24tdHJlZXMveG1sL0NJVEVfVFJFRUJBTktfWE1ML3BlcnNldXMvbGF0dGIvNjM2MS9sYXR0Yi42MzYxLjEudGIueG1s">
-                1.1-1.10
-              </Link>
-            </dd>
+            <dl>
+              <dt className="pb-1">
+                C. Iulius Caesar,
+                {' '}
+                <em>
+                  Gallic War
+                </em>
+              </dt>
+              <dd>
+                <Link to="/aHR0cHM6Ly9wZXJzZWlkcy1wdWJsaWNhdGlvbnMuZ2l0aHViLmlvL2hhcnJpbmd0b24tdHJlZXMveG1sL0NJVEVfVFJFRUJBTktfWE1ML3BlcnNldXMvbGF0dGIvNzIyOS9sYXR0Yi43MjI5LjEudGIueG1s">
+                  1.1-1.10
+                </Link>
+              </dd>
+              <dd>
+                <Link to="/aHR0cHM6Ly9wZXJzZWlkcy1wdWJsaWNhdGlvbnMuZ2l0aHViLmlvL2hhcnJpbmd0b24tdHJlZXMveG1sL0NJVEVfVFJFRUJBTktfWE1ML3BlcnNldXMvbGF0dGIvNDM2Mi9sYXR0Yi40MzYyLjEudGIueG1s">
+                  4.24-4.36
+                </Link>
+              </dd>
+              <dd>
+                <Link to="/aHR0cHM6Ly9wZXJzZWlkcy1wdWJsaWNhdGlvbnMuZ2l0aHViLmlvL2hhcnJpbmd0b24tdHJlZXMveG1sL0NJVEVfVFJFRUJBTktfWE1ML3BlcnNldXMvbGF0dGIvNDM1MC9sYXR0Yi40MzUwLjEudGIueG1s">
+                  5.24-5.48
+                </Link>
+              </dd>
+              <dd>
+                <Link to="/aHR0cHM6Ly9wZXJzZWlkcy1wdWJsaWNhdGlvbnMuZ2l0aHViLmlvL2hhcnJpbmd0b24tdHJlZXMveG1sL0NJVEVfVFJFRUJBTktfWE1ML3BlcnNldXMvbWlzY3RiLzMyNi9taXNjdGIuMzI2LjEudGIueG1s">
+                  6.13-6.20
+                </Link>
+              </dd>
+              <dt className="pt-1 pb-1">
+                M. Tullius Cicero,
+                {' '}
+                <em>
+                  First Catilinarian
+                </em>
+              </dt>
+              <dd>
+                <Link to="/aHR0cHM6Ly9wZXJzZWlkcy1wdWJsaWNhdGlvbnMuZ2l0aHViLmlvL2hhcnJpbmd0b24tdHJlZXMveG1sL0NJVEVfVFJFRUJBTktfWE1ML3BlcnNldXMvbGF0dGIvNjM2MS9sYXR0Yi42MzYxLjEudGIueG1s">
+                  1.1-1.10
+                </Link>
+              </dd>
+            </dl>
           </div>
         </div>
         <hr />
         <div className="row pt-2">
           <div className="col">
-            <h4>
+            <h3 className="h4">
               Creating a word cloud from a treebank
-            </h4>
+            </h3>
           </div>
         </div>
         <div className="row pt-2">
