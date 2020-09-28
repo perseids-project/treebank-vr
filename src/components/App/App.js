@@ -5,12 +5,11 @@ import {
 } from 'react-router-dom';
 
 import Home from '../Home';
-import Cloud from '../Cloud';
 
 const App = () => (
   <Router basename={process.env.PUBLIC_URL}>
     <PerseidsHeader>
-      Treebank Word Cloud
+      Treebank Virtual Reality
 
       <ul className="navbar-nav ml-auto">
         <li className="nav-item">
@@ -24,13 +23,13 @@ const App = () => (
       <div className="container text-center">
         <Switch>
           <Route exact path="/" component={Home} />
-          <Route path="/:url/:index?" component={Cloud} />
+          {/* <Route path="/:url/:index?" component={Cloud} /> */}
         </Switch>
       </div>
     </main>
     <PerseidsFooter
-      github="https://github.com/perseids-project/treebank-wordcloud"
-      report="https://github.com/perseids-project/treebank-wordcloud/issues"
+      github="https://github.com/perseids-project/treebank-vr"
+      report="https://github.com/perseids-project/treebank-vr/issues"
       doi="10.5281/zenodo.3991082"
     />
   </Router>

@@ -1,12 +1,10 @@
-# Treebank Word Cloud Explorer
+# Treebank Virtual Reality
 
-Web application for creating word clouds from treebanks.
-It breaks the treebanks up according to the `subDoc` and generates
-a word cloud for each section.
+Web application for exploring treebanks in 3D.
 
 ## Try it Out
 
-[https://apps.perseids.org/treebank-wordcloud/](https://apps.perseids.org/treebank-wordcloud/)
+[https://apps.perseids.org/treebank-vr/](https://apps.perseids.org/treebank-vr/)
 
 ## Installation
 
@@ -23,8 +21,8 @@ Then run the command `PUBLIC_URL='./path/of/app' yarn build`.
 This will generate a set of static files in the `build/` directory that you can serve.
 
 For example, if you want to deploy it at `www.example.com/` then run `PUBLIC_URL='./' yarn build`.
-If you want to deploy it at `www.example.com/wordcloud` then run
-`PUBLIC_URL='./reasoning' yarn build`.
+If you want to deploy it at `www.example.com/vr` then run
+`PUBLIC_URL='./vr' yarn build`.
 
 ## Running tests
 

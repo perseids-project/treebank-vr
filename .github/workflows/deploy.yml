@@ -35,7 +35,7 @@ jobs:
       - name: Build Perseids
         run: yarn build
         env:
-          PUBLIC_URL: /treebank-wordcloud
+          PUBLIC_URL: /treebank-vr
 
       - name: Deploy Perseids
         uses: JamesIves/github-pages-deploy-action@releases/v3

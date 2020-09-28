@@ -4,7 +4,7 @@ import { Link, Redirect } from 'react-router-dom';
 import clickTreebank from './click-treebank.png';
 import copyLink from './copy-link.png';
 import pasteLink from './paste-link.png';
-import createWordcloud from './create-wordcloud.png';
+import createWordVr from './create-vr.png';
 
 class Home extends Component {
   constructor(props) {
@@ -51,7 +51,7 @@ class Home extends Component {
           <div className="row pt-4">
             <div className="col">
               <h1 className="h3">
-                Word Cloud from Treebank
+                Virtual Reality Treebank Explorer
               </h1>
               <h2 className="h6">
                 Enter the URL for a treebank XML document:
@@ -70,7 +70,7 @@ class Home extends Component {
             </div>
 
             <Link className="btn btn-block btn-primary" to={`/${escapedUrl}`}>
-              Create word cloud
+              Explore
             </Link>
           </div>
         </div>
@@ -186,7 +186,7 @@ class Home extends Component {
         <div className="row pt-2">
           <div className="col">
             <h3 className="h4">
-              Creating a word cloud from a treebank
+              Importing a treebank
             </h3>
           </div>
         </div>
@@ -211,9 +211,9 @@ class Home extends Component {
             </p>
           </div>
           <div className="col-md-3">
-            <img src={createWordcloud} className="img-fluid border" alt="treebank template page" />
+            <img src={createWordVr} className="img-fluid border" alt="treebank template page" />
             <p className="text-left pt-2">
-              4. Click the &quot;Create word cloud&quot; button.
+              4. Click the &quot;Explore&quot; button.
             </p>
           </div>
         </div>
