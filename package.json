@@ -13,8 +13,11 @@
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-force-graph": "^1.36.10",
+    "react-force-graph-vr": "^1.13.4",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.3",
+    "three-spritetext": "^1.5.2",
     "typeface-arimo": "^0.0.72",
     "typeface-tinos": "^0.0.72"
   },
