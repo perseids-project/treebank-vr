@@ -12,13 +12,13 @@ const convert = (text, id) => {
 
       let word;
       while (word = words.iterateNext()) {
-        const id = word.getAttribute('id');
+        const wordId = word.getAttribute('id');
         const val = word.getAttribute('form');
         const group = (word.getAttribute('postag') || '-')[0];
         const head = word.getAttribute('head');
 
-        json.nodes.push({ id, val, group });
-        json.links.push({ source: head, target: id });
+        json.nodes.push({ id: wordId, val, group });
+        json.links.push({ source: head, target: wordId });
       }
 
       break;

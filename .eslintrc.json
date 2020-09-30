@@ -2,6 +2,12 @@
   "extends": "airbnb",
   "parser": "babel-eslint",
   "rules": {
-    "react/jsx-filename-extension": [1, { "extensions": [".js"] }]
+    "react/jsx-filename-extension": [1, { "extensions": [".js"] }],
+    "no-cond-assign": 0
+  },
+  "globals": {
+    "fetch": true,
+    "DOMParser": true,
+    "XPathResult": true
   }
 }
