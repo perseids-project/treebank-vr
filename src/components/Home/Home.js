@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 
 import clickTreebank from './click-treebank.png';
+import findId from './find-id.png';
 import copyLink from './copy-link.png';
-import pasteLink from './paste-link.png';
-import createWordVr from './create-vr.png';
+import explore from './explore.png';
 
 class Home extends Component {
   constructor(props) {
@@ -220,22 +220,24 @@ class Home extends Component {
             </p>
           </div>
           <div className="col-md-3">
+            <img src={findId} className="img-fluid border" alt="treebank template page" />
+            <p className="text-left pt-2">
+              2. Navigate to the sentence you would like to explore in virtual reality and
+              note the sentence ID.
+            </p>
+          </div>
+          <div className="col-md-3">
             <img src={copyLink} className="img-fluid border" alt="treebank template page" />
             <p className="text-left pt-2">
-              2. Scroll to the bottom of the page, right click on the &quot;View XML&quot; link,
+              3. Scroll to the bottom of the page, right click on the &quot;View XML&quot; link,
               and copy the link location.
             </p>
           </div>
           <div className="col-md-3">
-            <img src={pasteLink} className="img-fluid border" alt="treebank template page" />
+            <img src={explore} className="img-fluid border" alt="treebank template page" />
             <p className="text-left pt-2">
-              3. Paste the link in the &quot;URL&quot; text input.
-            </p>
-          </div>
-          <div className="col-md-3">
-            <img src={createWordVr} className="img-fluid border" alt="treebank template page" />
-            <p className="text-left pt-2">
-              4. Click the &quot;Explore&quot; button.
+              4. Paste the link in the &quot;URL&quot; text input and enter the sentence ID in the
+              &quot;ID&quot; input. Click the &quot;Explore&quot; button.
             </p>
           </div>
         </div>
