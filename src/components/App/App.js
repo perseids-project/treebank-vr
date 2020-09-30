@@ -33,7 +33,7 @@ const innerRouter = () => (
       <PerseidsFooter
         github="https://github.com/perseids-project/treebank-vr"
         report="https://github.com/perseids-project/treebank-vr/issues"
-        doi="10.5281/zenodo.3991082"
+        doi="to be added after Zenodo integration"
       />
     </Router>
   </StrictMode>
