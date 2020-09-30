@@ -1,6 +1,6 @@
 {
   "name": "treebank-vr",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "private": true,
   "homepage": "https://perseids-project.github.io/treebank-vr/",
   "dependencies": {
