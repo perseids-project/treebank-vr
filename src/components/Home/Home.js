@@ -41,7 +41,7 @@ class Home extends Component {
 
     if (redirect) {
       return (
-        <Redirect to={escapedUrl} />
+        <Redirect to={`/${escapedUrl}/1`} />
       );
     }
 

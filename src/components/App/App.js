@@ -4,6 +4,8 @@ import {
   BrowserRouter as Router, Route, Switch, NavLink,
 } from 'react-router-dom';
 
+import styles from './App.module.css';
+
 import Home from '../Home';
 import Graph from '../Graph';
 
@@ -21,7 +23,7 @@ const innerRouter = () => (
           </li>
         </ul>
       </PerseidsHeader>
-      <main role="main">
+      <main role="main" className={styles.main}>
         <div className="container text-center">
           <Switch>
             <Route exact path="/" component={Home} />
